@@ -1,0 +1,18 @@
+
+{% extends "base.html" %}
+{% load gravatar %}
+
+{% block content %}
+
+
+ <p> <h1> {{ object.name }} </h1> <br/>
+</p>
+
+{% for res in event.resource.all %}
+   {% if res.is_res %}
+     {{ res }}
+   {% endif %}
+{% endfor %}
+
+
+{% endblock %}

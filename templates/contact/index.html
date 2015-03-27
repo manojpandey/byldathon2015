@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+ 
+
+{% block content %}
+
+<hr/>
+<center><h4>Your Contacts</h4></center>
+{% for contact in contacts %}
+
+<li> <a href="{{ contact.slug }}/">{{ contact.name }}</a> </li>
+
+
+{% endfor %}
+{% endblock %}

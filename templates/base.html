@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+
+	<title></title>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+      <ul class="nav nav-pills pull-right" ng-controller="NavbarController">
+      
+        <li class="{active:getActive('/about')}"><a href="/add">Submit Resource</a></li>
+      </ul>
+      <h3 class="text-muted">AlgoMaster</h3>
+    </div>
+	 {% block content %}
+      {% endblock %}      
+ 
+
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script> 
+</body>
+</html>
+
+<body>
